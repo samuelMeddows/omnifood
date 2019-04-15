@@ -112,12 +112,20 @@
     
     .works-step { margin-bottom: 20px; }
     .works-step:last-child { margin-bottom: 20px; }
-
 }
-
 
 /* Small phones from 0 to 480px*/
 @media only screen and (max-width: 480px) { /*Witdth of the old iPhones 5/4*/
     section { padding: 25px 0; }
     .contact-form { width: 100%; }
 }
+
+@supports (-webkit-overflow-scrolling: touch) {
+    /* CSS for iOS devices */ 
+    /* Fixes issueds with Safari Mobile displays background-attachement-fixed is blank.*/
+    header {
+        background-attachment: scroll;
+        }
+}
+
+
