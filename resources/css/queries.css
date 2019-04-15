@@ -126,6 +126,10 @@
     header {
         background-attachment: scroll;
         }
+
+    .section-testimonials {
+        background-attachment: scroll;
+    }
 }
 
 
